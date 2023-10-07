@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style1.css">
+    <title>HaCKinno</title>
+    
+<style>
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    max-width: 700px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(255, 31, 98, 0.2);
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    margin-top: 80px;
+}
+
+.problem-statement-container {
+    max-height: 400px;
+    overflow-y: auto;
+}
+
+.box {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    border: 3px solid #ff0095;
+    background-color: #d8b8c5;
+    margin: 10px 0;
+    border-radius: 5px;
+    transition: transform 0.2s ease-in-out;
+}
+
+.box:hover {
+    transform: translateX(2px);
+}
+
+.problem-statement,
+.description {
+    flex: 1;
+    padding: 10px;
+}
+
+.problem-statement {
+    border-right: 1px solid #ccc;
+}
+
+h2 {
+    margin-top: 0;
+}
+
+.search-bar {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.share-buttons {
+    margin-bottom: 20px;
+}
+
+        /* Add any additional styles you need */
+    </style>
+</head>
+<body>
+    <div id="content">
+        <div id="nav" style="padding-left: 30%; padding-right: 30%;">
+            <h1>HaCK<span>inno</span></h1>
+            <div class="burger-menu" id="burger-menu">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            <ul id="nav-links">
+              <li><a href="home.html" onclick="showPage('home.html')">Home</a></li>
+            
+
+
+          </ul>
+        </div>
+    
+    <div class="main">
+        <video autoplay muted loop id="myVideo">
+            <source src="space.mp4" type="video/mp4">
+        </video>
+        <div class="container">
+            <h1>AI Application Ideas</h1>
+    
+            
+            <!-- Add social sharing buttons -->
+            <div class="share-buttons">
+                <a href="https://www.linkedin.com/" target="_blank"><button>Share on LinkedIn</button></a>
+                <a href="https://wa.me/" target="_blank"><button>Share on Whatsapp</button></a>
+                <a href="https://www.instagram.com/" target="_blank"><button>Share on Instagram</button></a>
+                
+
+            </div>
+    
+           
+            <!-- Problem statements container with scrollable content -->
+            <div class="problem-statement-container">
+                <!-- Problem statements -->
+                
+                <div class="box">
+                    <div class="problem-statement">
+                        <h2>Problem Statement</h2>
+                        <h1><p>PS-01</p></h1>
+                    </div>
+                    <div class="description">
+                        <h2>Description</h2>
+                        <p>Create a basic AI chatbot application that helps students with study-related questions, such as providing explanations for simple math problems or suggesting study resources.</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="problem-statement">
+                        <h2>Problem Statement</h2>
+                        <h1><p>PS-02</p></h1>
+                    </div>
+                    <div class="description">
+                        <h2>Description</h2>
+                        <p>Build an application that provides real-time weather updates for a specific location using AI for weather prediction.</p>
+                    </div>
+                </div>
+                
+                <div class="box">
+                    <div class="problem-statement">
+                        <h2>Problem Statement</h2>
+                        <h1><p>PS-03</p></h1>
+                    </div>
+                    <div class="description">
+                        <h2>Description</h2>
+                        <p>Develop a voice-controlled AI assistant application that can perform simple tasks like setting reminders, sending text messages, or answering general knowledge questions.</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="problem-statement">
+                        <h2>Problem Statement</h2>
+                        <h1><p>PS-04</p></h1>
+                    </div>
+                    <div class="description">
+                        <h2>Description</h2>
+                        <p>Create an image classification tool that can distinguish between common objects or animals in images using a pre-trained machine learning model.</p>
+                    </div>
+                </div>
+                
+                <div class="box">
+                    <div class="problem-statement">
+                        <h2>Problem Statement</h2>
+                        <h1><p>PS-05</p></h1>
+                    </div>
+                    <div class="description">
+                        <h2>Description</h2>
+                        <p>Build a simple AI-based application for recipe generator that suggests recipes based on available ingredients.</p>
+                    </div>
+                </div>
+                
+                <div class="box">
+                    <div class="problem-statement">
+                        <h2>Problem Statement</h2>
+                        <h1><p>PS-06</p></h1>
+                    </div>
+                    <div class="description">
+                        <h2>Description</h2>
+                        <p>Develop a basic language translation application that translates text from one language to another.</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="problem-statement">
+                        <h2>Problem Statement</h2>
+                        <h1><p>PS-07</p></h1>
+                    </div>
+                    <div class="description">
+                        <h2>Description</h2>
+                        <p>Create a basic sentiment analysis application that analyzes text and determines whether it's positive, negative, or neutral.</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="problem-statement">
+                        <h2>Problem Statement</h2>
+                        <h1><p>PS-08</p></h1>
+                    </div>
+                    <div class="description">
+                        <h2>Description</h2>
+                        <p>Implement a basic AI opponent application for a classic game like Tic-Tac-Toe or Hangman.</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="problem-statement">
+                        <h2>Problem Statement</h2>
+                        <h1><p>PS-09</p></h1>
+                    </div>
+                    <div class="description">
+                        <h2>Description</h2>
+                        <p>Build a basic AI-driven chat application that generates responses based on user input and context.</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="problem-statement">
+                        <h2>Problem Statement</h2>
+                        <h1><p>PS-10</p></h1>
+                    </div>
+                    <div class="description">
+                        <h2>Description</h2>
+                        <p>Create a music recommendation AI application that suggests songs based on user preferences and listening history.</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="problem-statement">
+                        <h2>Problem Statement</h2>
+                        <h1><p>PS-11</p></h1>
+                    </div>
+                    <div class="description">
+                        <h2>Description</h2>
+                        <p>Develop an AI-based health tracking application that provides insights into user health based on data such as diet and exercise.</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="problem-statement">
+                        <h2>Problem Statement</h2>
+                        <h1><p>PS-12</p></h1>
+                    </div>
+                    <div class="description">
+                        <h2>Description</h2>
+                        <p>Create an AI-driven educational application that adapts learning content based on individual student progress and performance.</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="problem-statement">
+                        <h2>Problem Statement</h2>
+                        <h1><p>PS-13</p></h1>
+                    </div>
+                    <div class="description">
+                        <h2>Description</h2>
+                        <p>Build an application that predicts traffic conditions and suggests alternative routes in real-time using AI and traffic data.</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="problem-statement">
+                        <h2>Problem Statement</h2>
+                        <h1><p>PS-14</p></h1>
+                    </div>
+                    <div class="description">
+                        <h2>Description</h2>
+                        <p>Develop a language learning app that uses AI for speech recognition and pronunciation feedback.</p>
+                    </div>
+                </div>
+                
+                <div class="box">
+                    <div class="problem-statement">
+                        <h2>Problem Statement</h2>
+                        <h1><p>PS-15</p></h1>
+                    </div>
+                    <div class="description">
+                        <h2>Description</h2>
+                        <p>Implement an image recognition application using your own dataset for a specific set of objects or concepts.</p>
+                    </div>
+                </div>
+                
+                <div class="box">
+                    <div class="problem-statement">
+                        <h2>Problem Statement</h2>
+                        <h1><p>PS-16</p></h1>
+                    </div>
+                    <div class="description">
+                        <h2>Description</h2>
+                        <p>Create a virtual AI assistant application that can perform more complex tasks, such as scheduling meetings, managing emails, and providing detailed information.</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="problem-statement">
+                        <h2>Problem Statement</h2>
+                        <h1><p>PS-17</p></h1>
+                    </div>
+                    <div class="description">
+                        <h2>Description</h2>
+                        <p>Build a real-time speech-to-speech translation application that can translate spoken language into another language.</p>
+                    </div>
+                </div>
+                
+                <div class="box">
+                    <div class="problem-statement">
+                        <h2>Problem Statement</h2>
+                        <h1><p>PS-18</p></h1>
+                    </div>
+                    <div class="description">
+                        <h2>Description</h2>
+                        <p>Develop an AI application that can identify crop diseases from images and provide recommendations for treatment.</p>
+                    </div>
+                </div>
+                
+                <div class="box">
+                    <div class="problem-statement">
+                        <h2>Problem Statement</h2>
+                        <h1><p>PS-19</p></h1>
+                    </div>
+                    <div class="description">
+                        <h2>Description</h2>
+                        <p>Create an e-commerce product recommendation application that uses AI to suggest products to users based on their browsing and purchase history.</p>
+                    </div>
+                </div>
+                
+                
+                <div class="box">
+                    <div class="problem-statement">
+                        <h2>Problem Statement</h2>
+                        <h1><p>PS-20</p></h1>
+                    </div>
+                    <div class="description">
+                        <h2>Description</h2>
+                        <p>Build an AI-based smart home control system that allows users to control various IoT devices and appliances using voice commands and automation.</p>
+                    </div>
+                </div>
+                
+                <div class="box">
+                    <div class="problem-statement">
+                        <h2>Problem Statement</h2>
+                        <h1><p>PS-21</p></h1>
+                    </div>
+                    <div class="description">
+                        <h2>Description</h2>
+                        <p>Develop an innovative AI powered application to enhancing the overall functionality and efficiency of our college campus. </p>
+                    </div>
+                </div>
+                
+                <div class="box">
+                    <div class="problem-statement">
+                        <h2>Problem Statement</h2>
+                        <h1><p>PS-22</p></h1>
+                    </div>
+                    <div class="description">
+                        <h2>Description</h2>
+                        <p>Develop an AI application to enhance women’s safety and security in various situations. </p>
+                    </div>
+                </div>
+                
+                <div class="box">
+                    <div class="problem-statement">
+                        <h2>Problem Statement</h2>
+                        <h1><p>PS-23</p></h1>
+                    </div>
+                    <div class="description">
+                        <h2>Description</h2>
+                        <p>Create an innovative AI application to reduce the workload burdens faced by teachers. </p>
+                    </div>
+                </div>
+                
+                
+                <div class="box">
+                    <div class="problem-statement">
+                        <h2>Problem Statement</h2>
+                        <h1><p>PS-24</p></h1>
+                    </div>
+                    <div class="description">
+                        <h2>Description</h2>
+                        <p>Build an social impactful application that addresses a challenge faced by our society today. </p>
+                    </div>
+                </div>
+                
+                <div class="box">
+                    <div class="problem-statement">
+                        <h2>Problem Statement</h2>
+                        <h1><p>PS-25</p></h1>
+                    </div>
+                    <div class="description">
+                        <h2>Description</h2>
+                        <p>Develop an AI application that useful for human health and digital wellbeing. </p>
+                    </div>
+                </div>
+                
+                <!-- Add more problem statement boxes here -->
+            </div>
+    
+            <script>
+        
+                function scrollToSection(sectionId) {
+                    const section = document.getElementById(sectionId);
+                    if (section) {
+                        section.scrollIntoView({ behavior: 'smooth' });
+                    }
+                }
+            
+            
+                    document.addEventListener('DOMContentLoaded', function () {
+                        const burgerMenu = document.getElementById('burger-menu');
+                        const navLinks = document.getElementById('nav-links');
+            
+                        burgerMenu.addEventListener('click', function () {
+                            // Toggle the visibility of the links
+                            if (navLinks.style.display === 'block') {
+                                navLinks.style.display = 'none';
+                            } else {
+                                navLinks.style.display = 'block';
+                            }
+                        });
+                    });
+                </script><!-- JavaScript for searching problem statements -->
+
+        </div>
+    </div>
+</body>
+</html>
